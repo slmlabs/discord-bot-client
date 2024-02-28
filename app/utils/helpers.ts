@@ -1,10 +1,7 @@
-import { GetServerSidePropsContext } from "next";
+"use server";
+import { cookies } from "next/headers";
 
-export const validateCookies = (ctx: GetServerSidePropsContext) => {
-  const sessionID = ctx.req.cookies["connect.sid"];
-  return sessionID
-    ? {
-        Cookie: `connect.sid=${sessionID}`,
-      }
-    : false;
-};
+export async function validateCookies() {
+  const sessionID = cookies().get("connect.sid")?.value;
+  return (await sessionID) ? { Cookie: `connect.sid=${sessionID}` } : false;
+}
