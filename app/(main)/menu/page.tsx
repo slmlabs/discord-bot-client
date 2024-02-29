@@ -1,6 +1,6 @@
-import { validateCookies } from "@/app/utils/helpers";
-import { fetchMutualGuilds } from "@/app/utils/api";
-import { Guild } from "@/app/utils/types";
+import { validateCookies } from "@/utils/helpers";
+import { fetchMutualGuilds } from "@/utils/api";
+import { Guild } from "@/utils/types";
 import { GuildMenuItems } from "./_components/guilds/GuildMenuItems";
 
 export default async function MenuPage() {

@@ -1,4 +1,4 @@
-import { Guild } from "@/app/utils/types";
+import { Guild } from "@/utils/types";
 import Image from "next/image";
 import { FC } from "react";
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Logo } from "@/components/logo";
+import { Logo } from "@/app/(home)/_components/logo";
 import Login from "./login";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
@@ -15,9 +15,7 @@ const Navbar = () => {
     <nav className="fixed z-50 top-0 w-full h-14 border-b shadow-sm flex items-center dark:border-white dark:border-opacity-20 ">
       {/* TODO: Mobile Sidebar */}
       <div className="flex items-center gap-x-4">
-        <Link href={"/"} className="hidden md:flex">
-          <Logo />
-        </Link>
+        <Logo />
         <Button
           size="lg"
           variant="ghost"
