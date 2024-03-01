@@ -8,25 +8,25 @@ type Props = {
 
 export const GuildMenuItems: FC<Props> = ({ guild }) => {
   return (
-    <div className="border flex items-center justify-between dark:border-white dark:border-opacity-20 py-5 px-8 my-3 mx-0 rounded-lg cursor-pointer ">
+    <div className="border flex flex-col items-center justify-between py-4 my-3 mx-0 rounded-lg cursor-pointer ">
       {guild.icon ? (
         <Image
           src={`https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png`}
-          height={55}
-          width={55}
-          className="rounded-full"
+          height={100}
+          width={100}
+          className="rounded-full border-solid border-4 border-gray-300"
           alt={guild.name}
         />
       ) : (
         <Image
           src={`/question.png`}
-          height={55}
-          width={55}
+          height={100}
+          width={100}
           className="rounded-full"
           alt={guild.name}
         />
       )}
-      <p>{guild.name}</p>
+      <p className="text-2xl font-semibold my-2 text-center">{guild.name}</p>
     </div>
   );
 };

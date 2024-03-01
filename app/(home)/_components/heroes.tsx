@@ -18,8 +18,13 @@ export const Heroes = () => {
             alt="play"
           />
         </div>
-        <div className="relative ml-4 h-[400px] w-[400px] hidden md:block">
-          <Image
+        {/* <div className="relative ml-4 h-[400px] w-[400px] hidden md:block">
+          <h2>Gaming</h2>
+          <p>
+            Find players to play with, create temporary voice channels, and
+            squad up like never before
+          </p>
+          {/* <Image
             src="gaming_light.svg"
             fill
             className="object-contain dark:hidden"
@@ -30,8 +35,8 @@ export const Heroes = () => {
             fill
             className="object-contain hidden dark:block"
             alt="Team"
-          />
-        </div>
+          /> */}
+        {/* </div> */}
       </div>
     </div>
   );

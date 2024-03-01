@@ -21,7 +21,7 @@ export const Heading = () => {
         <span className={cn("", font.className)}>RNDM</span> is a multi-purpose
         bot that is designed with your community in mind.
       </h3>
-      <Button>
+      <Button size="lg" className="py-5 rounded-full">
         <FaDiscord size="30" color="#7289DA" className="mr-2" />
         Login with Discord
       </Button>

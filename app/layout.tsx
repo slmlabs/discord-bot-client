@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { cn } from "@/lib/utils";
-import Navbar from "./(main)/_components/navbar";
-import Waves from "@/components/bg-wave";
 
-const font = Open_Sans({ subsets: ["latin"] });
+const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Discord Bot Dashboard",
